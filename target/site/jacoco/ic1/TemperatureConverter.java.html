@@ -5,19 +5,23 @@
 <span class="fc" id="L5">        return ((fahrenheit - 32) * 5 / 9);</span>
     }
 
+    public double kelvinToCelsius(double kelvin) {
+<span class="fc" id="L9">        return (kelvin - 273.15);</span>
+    }
+
     public double celsiusToFahrenheit(double celsius) {
-<span class="fc" id="L9">        return ((celsius * 9 / 5) + 32);</span>
+<span class="fc" id="L13">        return ((celsius * 9 / 5) + 32);</span>
     }
 
     public boolean isExtremeTemperature(double celsius) {
-<span class="fc" id="L13">        boolean extreme = false;</span>
-<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (celsius &lt; -40) {</span>
-<span class="fc" id="L15">            extreme = true;</span>
-<span class="fc bfc" id="L16" title="All 2 branches covered.">        } else if (celsius &gt; 50) {</span>
-<span class="fc" id="L17">            extreme = true;</span>
+<span class="fc" id="L17">        boolean extreme = false;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (celsius &lt; -40) {</span>
+<span class="fc" id="L19">            extreme = true;</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        } else if (celsius &gt; 50) {</span>
+<span class="fc" id="L21">            extreme = true;</span>
         }
 
-<span class="fc" id="L20">        return extreme;</span>
+<span class="fc" id="L24">        return extreme;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

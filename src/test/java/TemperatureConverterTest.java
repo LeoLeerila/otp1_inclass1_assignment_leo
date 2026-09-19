@@ -23,6 +23,21 @@ public class TemperatureConverterTest {
     }
 
     @Test
+    public void kelvinToCelsiusPositive27315(){
+        assertEquals(0, temperatureConverter.kelvinToCelsius(273.15), 0);
+    }
+
+    @Test
+    public void kelvinToCelsius0(){
+        assertEquals(-273.15, temperatureConverter.kelvinToCelsius(0), 0);
+    }
+
+    @Test
+    public void kelvinToCelsiusNegative27315(){
+        assertEquals(-546.3, temperatureConverter.kelvinToCelsius(-273.15), 0);
+    }
+
+    @Test
     public void celsiusToFahrenheit0(){
         assertEquals(32, temperatureConverter.celsiusToFahrenheit(0), 0);
     }
