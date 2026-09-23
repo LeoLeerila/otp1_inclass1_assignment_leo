@@ -15,6 +15,20 @@
 
     <build>
         <plugins>
+            <!-- JAR Plugin for configuring the manifest file -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>ic1.TemperatureConverter</mainClass> <!-- Correct main class -->
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
             <!-- JaCoCo Plugin for Code Coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
