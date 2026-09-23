@@ -11,7 +11,7 @@ pipeline {
         DOCKERHUB_REPO = 'amirdirin/cal_2026_update'
         DOCKER_IMAGE_TAG = 'v1'
     }*/
-    
+
     stages {
         stage ('check'){
             steps{
@@ -20,13 +20,13 @@ pipeline {
         }
         stage ('build'){
             steps{
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
         stage('test') {
             steps{
-                bat 'mvn test'
+                sh 'mvn test'
             }
         }
         stage('jacoco'){
