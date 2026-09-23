@@ -15,7 +15,8 @@ pipeline {
     stages {
         stage ('check'){
             steps{
-                git 'https://github.com/LeoLeerila/otp1_inclass1_assignment_leo.git'
+                git branch: 'main',
+                    url: 'https://github.com/LeoLeerila/otp1_inclass1_assignment_leo.git'
             }
         }
         stage ('build'){
