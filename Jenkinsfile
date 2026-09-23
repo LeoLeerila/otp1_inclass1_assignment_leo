@@ -34,7 +34,7 @@ pipeline {
                 jacoco()
             }
         }
-        /*stage('Build Docker Image') {
+        stage('Build Docker Image') {
             steps {
                 script {
                     docker.build("${DOCKERHUB_REPO}:${DOCKER_IMAGE_TAG}")
@@ -50,6 +50,6 @@ pipeline {
                     }
                 }
             }
-        }*/
+        }
     }
 }
