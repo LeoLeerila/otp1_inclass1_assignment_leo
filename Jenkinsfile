@@ -5,12 +5,13 @@ pipeline {
         maven 'maven'
     }
 
-    environment {
-        //PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
-        //DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        //DOCKERHUB_REPO = 'amirdirin/cal_2026_update'
-        //DOCKER_IMAGE_TAG = 'v1'
-    }
+    /*environment {
+        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
+        DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
+        DOCKERHUB_REPO = 'amirdirin/cal_2026_update'
+        DOCKER_IMAGE_TAG = 'v1'
+    }*/
+    
     stages {
         stage ('check'){
             steps{
